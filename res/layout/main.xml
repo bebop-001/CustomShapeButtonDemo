@@ -11,16 +11,12 @@
 		android:text="@string/hello_world" />
 
 	<Button
-		android:id="@+id/registers_btn"
+		android:id="@+id/button2"
+		android:background="@drawable/zen_button_red"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:layout_below="@+id/textView1"
 		android:layout_centerHorizontal="true"
-		android:layout_marginLeft="36dp"
-		android:background="@drawable/done_rounded_btn"
-		android:text="zzzz style"
-		android:textColor="@color/white"
-		android:textSize="15sp" />
+		android:text="zen button" />
 
 	<Button
 		android:id="@+id/button_00_00"
@@ -42,5 +38,17 @@
 		android:layout_marginTop="20dp"
 		android:background="@drawable/button_shapes_colors"
 		android:text="button shapes and colors" />
+
+	<Button
+		android:id="@+id/registers_btn"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/button2"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="16dp"
+		android:background="@drawable/done_rounded_btn"
+		android:text="zzzz style"
+		android:textColor="@color/white"
+		android:textSize="15sp" />
 
 </RelativeLayout>
