@@ -1,5 +1,6 @@
 package com.example.customshapebuttondemo;
 /*
+ * zen_button ref: http://developerlife.com/tutorials/?p=1239
  * Ref: zzzz: http://stackoverflow.com/questions
  * 		/18074303/how-to-create-custom-shape-button-with-selector-in-android
  * shapes and colors: http://stackoverflow.com/questions
