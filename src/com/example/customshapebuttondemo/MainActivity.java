@@ -12,14 +12,35 @@ package com.example.customshapebuttondemo;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
+import android.util.Log;
+import android.view.View;
+import android.widget.RadioGroup;
+import android.widget.RadioGroup.OnCheckedChangeListener;
 
 public class MainActivity extends Activity {
+	private static final String logTag = "MainActivity";
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main);
+		((RadioGroup)findViewById(R.id.radioButtons))
+			.setOnCheckedChangeListener(radioButtonChanged());
+		((RadioGroup)findViewById(R.id.customRadioButtons))
+			.setOnCheckedChangeListener(radioButtonChanged());
+	}
+	private OnCheckedChangeListener radioButtonChanged () {
+		return new OnCheckedChangeListener() {
+			@Override
+			public void onCheckedChanged(RadioGroup group, int button) {
+				Log.i(logTag, String.format("onCheckedChanged: " +
+						"group id = 0x%08x, button id = 0x%08x"
+						, group.getId(), button));
+				
+			}
+		};
+	}
+	public void onRadioGroupClicked(View view) {
+		Log.i(logTag, String.format("onRadioGroupClicked: id = 0x%08x", view.getId()));
 	}
 }

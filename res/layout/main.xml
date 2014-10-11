@@ -12,10 +12,10 @@
 
 	<Button
 		android:id="@+id/button2"
-		android:background="@drawable/zen_button_red"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:layout_centerHorizontal="true"
+		android:background="@drawable/zen_button_red"
 		android:text="zen button" />
 
 	<Button
@@ -27,7 +27,7 @@
 		android:layout_centerHorizontal="true"
 		android:layout_marginTop="20dp"
 		android:tag="a"
-		android:text="h_button style" />
+		android:text="h button style" />
 
 	<Button
 		android:id="@+id/button1"
@@ -45,10 +45,52 @@
 		android:layout_height="wrap_content"
 		android:layout_below="@+id/button2"
 		android:layout_centerHorizontal="true"
-		android:layout_marginTop="16dp"
+		android:layout_marginTop="20dp"
 		android:background="@drawable/done_rounded_btn"
 		android:text="zzzz style"
 		android:textColor="@color/white"
 		android:textSize="15sp" />
+
+	<RadioGroup
+		android:id="@+id/radioButtons"
+		android:layout_below="@+id/button1"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="20dp"
+		android:orientation="horizontal" >
+
+		<RadioButton
+			android:id="@+id/radioButton1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:checked="true"
+			android:text="Radio Button 1 " />
+
+		<RadioButton
+			android:id="@+id/radioButton2"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Radio Button 2 " />
+	</RadioGroup>
+
+	<RadioGroup
+		android:id="@+id/customRadioButtons"
+		android:layout_below="@+id/radioButtons"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="20dp"
+		android:orientation="horizontal" >
+
+		<RadioButton
+			android:id="@+id/RadioButton02"
+			style="@style/custom_radio_button_style"
+			android:checked="true"
+			android:text="Button 1 " />
+
+		<RadioButton
+			android:id="@+id/RadioButton01"
+			style="@style/custom_radio_button_style"
+			android:text="Button 2 " />
+	</RadioGroup>
 
 </RelativeLayout>
